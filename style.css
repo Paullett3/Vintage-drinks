@@ -1,6 +1,6 @@
 
 :root {
-    --gold: #c49a6c;         
+    --gold: #121212;        
     --dark-bg: #121212;     
     --card-bg: #1e1e1e;      
 }
@@ -93,4 +93,14 @@ body {
     .hero-section {
         height: 70vh;
     }
+}
+.shop now{
+width: 400px;
+background-color: #121212;
+color:  #121212;
+position: fixed;
+top: 0;
+inset: 0 0 auto;
+display: grid;
+
 }
