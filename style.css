@@ -1,6 +1,6 @@
 
 :root {
-    --gold: #121212;        
+    --gold:#ff9f43;        
     --dark-bg: #121212;     
     --card-bg: #1e1e1e;      
 }
@@ -94,7 +94,7 @@ body {
         height: 70vh;
     }
 }
-.shop now{
+.Cart{
 width: 400px;
 background-color: #121212;
 color:  #121212;
@@ -102,5 +102,16 @@ position: fixed;
 top: 0;
 inset: 0 0 auto;
 display: grid;
+.text-gold {
+    color: var(--gold) !important;
+}
+
+}
+.button{
+    background-color: 121212;
+    color: gold;
+    border-color: gold;
+        font-weight: 700;
+    transition: all 0.3s ease;
 
 }
