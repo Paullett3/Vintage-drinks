@@ -51,3 +51,6 @@ Desktop View
 
  Mobile View
 ![Mobile Layout on iPhone 12](screenshots/iphone14.png)
+4. Installl and setup
+install the routing dependency
+*npm install react-router-dom*
