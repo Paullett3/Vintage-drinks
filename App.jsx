@@ -5,7 +5,7 @@ import Home from ' ./pages/Home';
 import SignatureReserves from './pages/SignatureReserves';
 import Cart from './pages/Cart';
 
-export default function App () 
+export default function App () {}
     //Global state to track items added to the cart
     const [cart, setCart] = useState([
         {id: 1, name: "The Macallan 1926", price: $2100000, quantity: 1, image: "assets/images/macallan 1926.jpeg"},
@@ -26,22 +26,21 @@ const updateQuantity = (id,amount) => {
 const totalItems = cart.reduce ((sum, item) => sum + item.quantity, 0);
 return (
     <Route>
-        <div className= "min-h-screen bg-[#0d0d0d] text-[#f5f5f5"] font-sans">
-        {/* pass total items to display on the Cart Button*/}
+<div className="min-h-screen bg-[#0d0d0d] text-[#f5f5f5] font-sans">        {/* pass total items to display on the Cart Button*/}
         <Navbar cartCount={totalItem} />
-        
+
         <Routes>
-            <Route path="/" element={home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/reserves" element={<SignatureReserves />} />
             <Route path="/cart" element={
                 <Cart
                 cartItems={cart}
                 onRemove={removeFromCart}
                 onUpdateQty={updateQuantity}
-                />
-            } />
+            />
+          } />
         </Routes>
-        </div>
+      </div>
     </Router>
-);
+  );
 }
